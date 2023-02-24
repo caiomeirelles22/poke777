@@ -28,7 +28,7 @@ const Home = () => {
             <Container maxWidth='false'>
                 <Grid container>
                     {pokemons.map((pokemon, key) =>(
-                        <Grid item xs={3}  key ={key} >
+                        <Grid item xs={12} sm={6} md={3}  key ={key} >
                             <PokemonCard name={pokemon.data.name} image={pokemon.data.sprites.front_default}/>
                             </Grid>
                     ))}
